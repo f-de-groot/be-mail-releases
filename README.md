@@ -2,39 +2,23 @@
 
 # BE-Mail - releases
 
-Download and update channel for **BE-Mail**, a simple, fast and secure mail and calendar
-client for Office 365 (Tauri + Rust).
-
-This repository holds nothing but release artifacts. It is public because the app's built-in
-updater needs somewhere it can reach without a token.
+Download channel for **BE-Mail**, a mail and calendar client for Windows.
 
 ## Install
 
-Take the installer from the **[latest release](../../releases/latest)** - under **Assets**,
-`BE-Mail_x.y.z_x64-setup.exe`.
+Take `BE-Mail_x.y.z_x64-setup.exe` from the **[latest release](../../releases/latest)**
+and run it. No administrator rights are needed. SmartScreen may warn because the
+installer is not Authenticode-signed: choose *More info -> Run anyway*.
 
-| Asset | Purpose |
-|---|---|
-| `BE-Mail_x.y.z_x64-setup.exe` | **The installer - this is the one you want** |
-| `BE-Mail_x.y.z_x64_en-US.msi` | Alternative installer for managed deployment (Intune/GPO) |
-| `latest.json` | Update manifest with the signatures, polled by the built-in updater |
+Installed copies update themselves from here (`latest.json` is the signed update
+manifest), so there is no need to come back.
 
-Run the setup. Windows SmartScreen may warn on first install because the installer is not
-Authenticode-signed - choose *More info -> Run anyway*. The app installs per user; no
-administrator rights required.
+## Disclaimer
 
-On first start BE-Mail asks for the Client ID and Tenant ID of your organisation's Azure app
-registration; your administrator has them.
+BE-Mail is provided **as is**, without warranty of any kind. You install and use it
+entirely **at your own risk**. The author accepts **no responsibility or liability**
+whatsoever for any damage, data loss, lost, misdirected or leaked mail, security
+incidents or any other consequence of installing or using it. There is no support.
 
-## Updates
-
-BE-Mail checks this repository for updates and installs them itself. Every update is
-cryptographically signed and verified before installation, so there is no need to come back
-here.
-
-## Terms
-
-BE-Mail is provided **as is**, with no warranty and no support commitment. Making the
-installers reachable here does not license anyone to redistribute, mirror or repackage them.
-
-Copyright (c) 2026 Be Interactive. All rights reserved.
+Copyright (c) 2026 Be Interactive. All rights reserved. No permission is given to
+redistribute or repackage the installers.
